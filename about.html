@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Specific styles for the detailed lists in About page */
+        .detail-card {
+            background: rgba(255, 255, 255, 0.4);
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border-left: 5px solid var(--accent-color);
+        }
+        .detail-card h3 {
+            font-size: 1.5rem;
+            color: var(--text-color);
+        }
+        .detail-card .role {
+            font-weight: 600;
+            color: var(--accent-color);
+            margin-bottom: 10px;
+            display: block;
+        }
+        .detail-card ul {
+            list-style: disc;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        .detail-card li {
+            margin-bottom: 8px;
+        }
+        .skill-tag {
+            display: inline-block;
+            background: var(--text-color);
+            color: var(--white);
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-right: 5px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">My Portfolio</div>
+        <nav>
+            <ul>
+                  <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Publication.html">publication</a></li>
+            <li><a href="Link.html">link</a></li>
+            <li><a href="Resources.html">Resources</a></li>
+            <li><a href="gallery.html">gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        
+        <h1 class="section-title">About Me</h1>
+        <p style="max-width: 800px; margin-bottom: 40px;">
+            I am a dedicated technical professional with over a decade of experience in managing advanced electronics and characterization laboratories at premier institutes. My expertise spans across Micro & Nano Electronics, Device Reliability, and cutting-edge prototyping in Robotics and Drones.
+        </p>
+
+        <h2 style="margin-bottom: 20px;">Professional Experience</h2>
+
+        <div class="detail-card">
+            <h3>Technical Officer (Scale I)</h3>
+            <span class="role">Makerspace, IIT Bombay | December 2025 – Present</span>
+            <p><strong>Focus:</strong> Drone, Robotics, and Prototyping Research</p>
+            <p style="margin-top: 10px;">Leading technical initiatives in a high-innovation environment, focusing on customized solutions for societal and industrial needs.</p>
+            
+            <div style="margin-top: 15px;">
+                <strong>Key Skills:</strong><br>
+                <span class="skill-tag">Mechatronics</span>
+                <span class="skill-tag">MEMS Sensors</span>
+                <span class="skill-tag">Actuators</span>
+                <span class="skill-tag">Additive 3D Printing</span>
+                <span class="skill-tag">PCB Design</span>
+                <span class="skill-tag">Prototyping</span>
+            </div>
+        </div>
+
+        <div class="detail-card">
+            <h3>Deputy Technical Officer</h3>
+            <span class="role">Department of Electrical Engineering, IIT Delhi | Oct 2010 – Dec 2025</span>
+            <p><strong>Associated with:</strong> IEC Group. Incharge of Electronics Laboratory, DWLCL, MEMS, and IML.</p>
+            
+            <ul>
+                <li><strong>Electronics Laboratory:</strong> Supporting analog, digital, and mix-signal circuit design, testing, and analysis.</li>
+                <li><strong>DWLCL (Device and Wafer-Level Characterization Lab):</strong> Facilitating advanced semiconductor device evaluation using Semiconductor Parameter Analyzers, DC (IV, CV) & RF measurements, and Cascade 11000 Advanced Wafer Probers.</li>
+                <li><strong>MEMS Laboratory:</strong> Enabling development and testing of Microelectromechanical Systems (MEMS), including fabrication, modeling, and reliability testing.</li>
+                <li><strong>IML (Interdisciplinary Micro Systems Lab):</strong> Supporting research in sensors and actuators. Managed micron-scale fabrication (photolithography, soft lithography) and tools like Laser Cutters and Mask Writers.</li>
+                <li><strong>Lifecycle Management:</strong> Procurement of new instruments, regular maintenance, calibration, and infrastructure modernization.</li>
+                <li><strong>Student Support:</strong> Assisting in the design/execution of lab experiments and guiding students on advanced instrumentation.</li>
+            </ul>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid #555; margin: 40px 0;">
+
+        <h2 style="margin-bottom: 20px;">Education</h2>
+
+        <div class="detail-card" style="border-left-color: var(--text-color);">
+            <h3>M.S. (Research) in Micro and Nano Electronics</h3>
+            <span class="role">Indian Institute of Technology (IIT) Delhi | 2017 – 2021</span>
+            <p><strong>Specialization:</strong> Device Reliability due to HCI and radiation and Characterization of DC and RF MuGFET Devices down to 10 nm.</p>
+            <p><strong>Supervisor:</strong> Prof. Abhisek Dixit</p>
+            <p><strong>Research Group:</strong> IEC Group, Electrical Engineering Dept.</p>
+        </div>
+
+        <div class="detail-card" style="border-left-color: var(--text-color);">
+            <h3>B.E. in Electronics Instrumentation & Control Engineering</h3>
+            <span class="role">Government Engineering College, Bikaner (University of Rajasthan) | 2004 – 2008</span>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

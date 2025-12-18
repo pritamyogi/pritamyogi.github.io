@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pritam Yogi - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* --- Customized Layout Sizes --- */
+        
+        /* 1. Main Container (Kept wide at 95%) */
+        .container {
+            max-width: 80%; 
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .main-wrapper {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 50px;
+            padding: 80px 0;
+            position: relative;
+        }
+
+        /* 2. LEFT SIDE: Width Decreased by ~10% */
+        .text-side {
+            flex: 2.15; /* Reduced from 2.4 to shrink width slightly */
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(10px);
+            padding: 50px;
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.6);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+
+        /* RIGHT SIDE: Image Container */
+        .image-side {
+            flex: 1; 
+            position: sticky;
+            top: 40px; 
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        /* 3. IMAGE: Kept large (560px) */
+        .profile-img {
+            width: 100%;
+            max-width: 560px;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            border-radius: 20px;
+            border: 10px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+
+        /* --- Typography & Styling --- */
+        .greeting {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #555;
+            margin-bottom: 5px;
+        }
+
+        h1 {
+            font-size: 4rem;
+            line-height: 1.1;
+            margin-bottom: 25px;
+            color: var(--text-color);
+        }
+
+        .highlight {
+            color: var(--accent-color);
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: var(--text-color);
+            border-bottom: 2px solid rgba(0,0,0,0.1);
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 20px;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        /* Tech Tags Styling */
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .tech-tag {
+            background: var(--text-color);
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: 0.2s;
+        }
+
+        .tech-tag:hover {
+            background: var(--accent-color);
+            transform: translateY(-2px);
+        }
+
+        /* Buttons */
+        .btn-group {
+            margin-top: 40px;
+        }
+
+        .btn-group .main-btn {
+            margin-right: 15px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1100px) {
+            .container { max-width: 100%; padding: 0 15px; }
+            .main-wrapper {
+                flex-direction: column-reverse;
+                align-items: center;
+                gap: 40px;
+                padding-top: 40px;
+            }
+            .image-side { position: relative; top: 0; width: 100%; }
+            .profile-img { max-width: 350px; }
+            .text-side { width: 100%; padding: 30px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Pritam Yogi</div>
+        <nav>
+            <ul>
+             <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Publication.html">publication</a></li>
+            <li><a href="Link.html">link</a></li>
+            <li><a href="Resources.html">Resources</a></li>
+            <li><a href="gallery.html">gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="main-wrapper">
+            
+            <div class="text-side">
+                <span class="greeting">Hello, I am</span>
+                <h1>Pritam <span class="highlight">Yogi</span>.</h1>
+                
+                <p>
+                    I am a dedicated technical professional with over a decade of experience in managing and operating advanced electronics and characterization laboratories at premier academic and research institutes. I work closely with students, researchers, and faculty to support teaching, experimentation, and applied research through hands-on engagement.
+                </p>
+
+                <h2><i class="fas fa-robot"></i> Current Focus</h2>
+                <p>
+                    In my current work, I focus on <strong>sensors and MEMS-based systems</strong>, custom PCB design and prototyping, additive manufacturing (3D printing), and digital and analog circuit development.
+                </p>
+                <p>
+                    I also develop <strong>drone and robotic solutions</strong> for research labs and industry, with system integration involving MEMS sensors for temperature, pressure, gas, and piezo applications using modern embedded platforms.
+                </p>
+                
+                <div class="tech-stack">
+                    <span class="tech-tag">ESP32</span>
+                    <span class="tech-tag">STM32</span>
+                    <span class="tech-tag">Raspberry Pi</span>
+                    <span class="tech-tag">Jetson</span>
+                    <span class="tech-tag">CPLD</span>
+                    <span class="tech-tag">FPGA</span>
+                    <span class="tech-tag">Arduino</span>
+                    <span class="tech-tag">Verilog/VHDL</span>
+                </div>
+
+                <h2><i class="fas fa-microchip"></i> Research Background</h2>
+                <p>
+                    Earlier in my career, I contributed extensively to <strong>device-level research</strong> on ultra-scaled semiconductor devices, on-wafer characterization, and device reliability, including radiation effects and hot-carrier degradation.
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-tag">DC & RF Measurements</span>
+                    <span class="tech-tag">Cryo Characterization</span>
+                    <span class="tech-tag">Nano Fabrication</span>
+                    <span class="tech-tag">FESEM & EDX</span>
+                    <span class="tech-tag">TCAD Modeling</span>
+                    <span class="tech-tag">BSIM-BULK</span>
+                </div>
+
+                <h2><i class="fas fa-hand-holding-heart"></i> Philosophy</h2>
+                <p>
+                    I enjoy building reliable systems, setting up robust experiments, and mentoring students through practical learning, guided by strong fundamentals and careful measurement.
+                </p>
+
+                <div class="btn-group">
+                    <a href="contact.html" class="main-btn">Get in Touch</a>
+                    <a href="experience.html" class="main-btn" style="background: transparent; border: 2px solid var(--text-color); color: var(--text-color);">See Experience</a>
+                </div>
+            </div>
+
+            <div class="image-side">
+                <img src="profile.png" alt="Pritam Yogi Profile" class="profile-img">
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <p>&copy; 2025 Pritam Yogi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

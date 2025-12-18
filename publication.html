@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Specific styles for publications */
+        .pub-section-header {
+            font-size: 1.8rem;
+            color: var(--text-color);
+            border-bottom: 2px solid var(--accent-color);
+            display: inline-block;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 5px;
+        }
+
+        .pub-card {
+            background: rgba(255, 255, 255, 0.5); /* Slightly more transparent than others */
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--text-color);
+            transition: transform 0.2s ease;
+        }
+
+        .pub-card:hover {
+            background: rgba(255, 255, 255, 0.8);
+            transform: translateX(5px);
+        }
+
+        .pub-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .pub-authors {
+            font-style: italic;
+            color: #444;
+            margin-bottom: 8px;
+            display: block;
+            font-size: 0.95rem;
+        }
+
+        .pub-venue {
+            font-weight: 600;
+            color: var(--text-color);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">My Portfolio</div>
+        <nav>
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Publication.html">publication</a></li>
+            <li><a href="Link.html">link</a></li>
+            <li><a href="Resources.html">Resources</a></li>
+            <li><a href="gallery.html">gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        
+        <h1 class="section-title">List of Publications</h1>
+        <p>A collection of my research contributions in Conferences and Journals.</p>
+
+        <h2 class="pub-section-header">Conferences</h2>
+
+        <div class="pub-card">
+            <span class="pub-title">“Impact of Hot Carrier Injection on Total Ionizing Dose Effect of 10-nm N-channel Bulk FinFETs”</span>
+            <span class="pub-authors">P. Yogi, M. Kumar, K. Aditya, C. Gupta, A. Dixit</span>
+            <span class="pub-venue">Accepted in 5th International Conference on Emerging Electronics (ICEE), Delhi, India, 2020.</span>
+        </div>
+
+        <div class="pub-card">
+            <span class="pub-title">“Heavy-Ion Induced Single Event Transients in Sub-7nm Bulk and SOI NSFETs”</span>
+            <span class="pub-authors">C. K. Jha, A. Rathi, P. Yogi, K. Aditya, A. Dixit</span>
+            <span class="pub-venue">Accepted in 5th International Conference on Emerging Electronics (ICEE), Delhi, India, 2020.</span>
+        </div>
+
+        <div class="pub-card">
+            <span class="pub-title">"Effect of Post Radiation Annealing on the TID Response of 0.18µm bulk NFETs"</span>
+            <span class="pub-authors">K. Aditya, M. Kumar, C. K. Jha, R. Singh, P. Yogi, S. Basra, H. S. Jattana, and A. Dixit</span>
+            <span class="pub-venue">2019 Electron Devices Technology and Manufacturing Conference (EDTM), Singapore, 2019, pp. 336-338.</span>
+            <br>
+            <small>doi: 10.1109/EDTM.2019.8731170</small>
+        </div>
+
+
+        <h2 class="pub-section-header">Journal</h2>
+
+        <div class="pub-card" style="border-left-color: var(--accent-color);">
+            <span class="pub-title">“Comparison of LER Induced Mismatch in NWFET and NSFET for 5-nm CMOS”</span>
+            <span class="pub-authors">C. K. Jha, P. Yogi, C. Gupta, A. Gupta, R. A. Vega, and A. Dixit</span>
+            <span class="pub-venue">IEEE Journal on Electron Device Society, vol.8, pp. 1184-1192, Sept. 2020.</span>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
